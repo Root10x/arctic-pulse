@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { PageContainer } from "@/components/page-container";
 import { StatusBadge } from "@/components/status-badge";
-import { reviewQueueArticles, sites, users, articles } from "@/lib/mock-data";
+import { reviewQueueArticles, sites, articles } from "@/lib/mock-data";
 import {
   CheckCircle2,
   XCircle,
