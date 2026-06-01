@@ -533,15 +533,15 @@ export default function NewContentPage() {
             <div className="space-y-3">
               <div>
                 <label className="text-xs font-semibold text-slate-500 uppercase block mb-1">Title</label>
-                <p className="text-sm text-slate-900">{(showImageDetail as any).title || "AI Generated Image"}</p>
+                <p className="text-sm text-slate-900">{(showImageDetail as any).title || (showImageDetail as any).prompt?.slice(0, 50) + "..." || "AI Generated Image"}</p>
               </div>
-              {"credit" in showImageDetail && (
+              {(showImageDetail as any).credit && (
                 <div>
                   <label className="text-xs font-semibold text-slate-500 uppercase block mb-1">Credit</label>
-                  <p className="text-sm text-slate-700">{showImageDetail.credit} (Free to use with attribution)</p>
+                  <p className="text-sm text-slate-700">{(showImageDetail as any).credit} (Free to use with attribution)</p>
                 </div>
               )}
-              {"prompt" in showImageDetail && (
+              {(showImageDetail as any).prompt && (
                 <div>
                   <label className="text-xs font-semibold text-slate-500 uppercase block mb-1">Prompt</label>
                   <p className="text-sm text-slate-700">{(showImageDetail as any).prompt}</p>
