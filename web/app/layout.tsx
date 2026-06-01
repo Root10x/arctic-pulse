@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Sidebar } from "@/components/sidebar";
 import { TopBar } from "@/components/top-bar";
-import { RedirectHandler } from "@/components/redirect-handler";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +19,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <RedirectHandler />
         <div className="flex h-screen overflow-hidden">
           <Sidebar />
           <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
