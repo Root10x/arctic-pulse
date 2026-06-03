@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import {
-  CheckCircle2, Clock, AlertCircle, Send, Calendar, MessageSquare,
+  CheckCircle2, Clock, AlertCircle, Send, Calendar, MessageSquare, Clipboard,
   ChevronRight, Check, X, Image as ImageIcon, Link as LinkIcon,
   Tag, FolderOpen, Loader2, ArrowRight, Eye, Edit3, ThumbsUp,
   ThumbsDown, RotateCcw, ExternalLink,
@@ -280,7 +280,7 @@ export default function ReviewQueuePage() {
           ) : (
             <div className="flex-1 flex items-center justify-center text-center p-8">
               <div>
-                <ClipboardPaste className="w-12 h-12 text-slate-200 mx-auto mb-3" />
+                <Clipboard className="w-12 h-12 text-slate-200 mx-auto mb-3" />
                 <p className="text-sm text-slate-400">Select an article to review</p>
               </div>
             </div>
