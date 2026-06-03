@@ -6,7 +6,7 @@ import {
   CheckCircle2, Clock, AlertCircle, Send, Calendar, MessageSquare, Clipboard,
   ChevronRight, Check, X, Image as ImageIcon, Link as LinkIcon,
   Tag, FolderOpen, Loader2, ArrowRight, Eye, Edit3, ThumbsUp,
-  ThumbsDown, RotateCcw, ExternalLink,
+  ThumbsDown, RotateCcw, ExternalLink, Sparkles,
 } from "lucide-react";
 import { articles } from "@/lib/mock-data";
 
