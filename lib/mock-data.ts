@@ -201,7 +201,7 @@ export const mediaItems = Array.from({ length: 32 }, (_, i) => ({
   usageCount: Math.floor(Math.random() * 8),
   fileSize: `${(0.5 + Math.random() * 4).toFixed(1)} MB`,
   dimensions: ["1920x1080", "1600x900", "2048x1365", "1200x800"][i % 4],
-  source: ["uploaded", "free-stock", "ai-generated"][i % 3] as const,
+  source: (["uploaded", "free-stock", "ai-generated"] as const)[i % 3],
 }));
 
 // ===================== ACTIVITY FEED =====================
