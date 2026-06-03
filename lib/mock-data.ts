@@ -246,7 +246,7 @@ export const calendarEvents = Array.from({ length: 28 }, (_, i) => {
     siteName: site.name,
     date: `2024-06-${String(day).padStart(2, "0")}`,
     time: `${String(hour).padStart(2, "0")}:00`,
-    status: ["scheduled", "published", "draft"][i % 3] as const,
+    status: (["scheduled", "published", "draft"] as const)[i % 3],
     articleId: article.id,
   };
 });
